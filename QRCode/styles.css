@@ -1,24 +1,50 @@
-body{
-    background-color: #D5E1EF;
+/*Color variables*/
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    font-size: 0.9375rem
 }
-section{
-    margin: auto;
-    width: 25vh;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
+/*Body Styling*/
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Outfit, Helvetica, sans-serif;
     text-align: center;
-    color: grey;
- 
+    background-color: var(--light-gray);
+}
+.container {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
 }
 
-img{
+.card{
+    margin: 1rem;
+    max-width: 20rem;
+    padding: 2em;
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow:5px 5px 5px var(--grayish-blue);
+}
+
+.card img{
     width: 100%;
     border-radius: 10px;
-
+    margin: 0 auto;
+    text-align: center;
 }
 
-h1{
-    font-size: 22px;
-    color: #1F314F;
+.card h1{
+    color:var(--dark-blue);
+}
+
+.card p{
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grayish-blue);
 }
