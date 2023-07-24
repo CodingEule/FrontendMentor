@@ -25,10 +25,12 @@ body{
     flex-direction: row;
     width:870px;
     max-height: 500px;
-    padding: 30px;
     position: absolute;
     inset: 0;
     margin: auto;
+    border: white solid;
+    border-radius: 20px;
+    overflow: hidden;
     transition: 200ms ease;
 }
 
