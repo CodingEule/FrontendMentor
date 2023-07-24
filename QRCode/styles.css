@@ -1,0 +1,28 @@
+body{
+    background-color: #D5E1EF;
+}
+section{
+    margin: auto;
+    width: 25vh;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    color: grey;
+ 
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+h1{
+    font-size: 22px;
+    color: #1F314F;
+}
+@media screen(max-width: 500px) {
+
+    
+}
