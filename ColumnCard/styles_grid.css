@@ -180,7 +180,9 @@ body{
 }
 
 @media (min-width: 680px){
-    /* Allow percentage-based heights in the application*/
+    /* 
+    3. Allow percentage-based heights in the application
+    */
     html, body{
         height: 100%;
     }
