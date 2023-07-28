@@ -78,14 +78,30 @@
     background-color: var(--dark-blue-bg-card);
     border-radius: 10px;
     max-width: 400px;
+    box-shadow: 1px 1px 20px 10px rgb(12, 23, 41);
+    
   }
   .image_container{
     position: relative;
+    width: auto;
+    height: 340px;
+    cursor: pointer;
   }
   .top_img{
     position: absolute;
     top: 43%;
     left:43%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .color_bg{
+    background-color: var(--cyan);
+    width: 336px;
+    height: 336px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
     opacity: 0;
 
   }
@@ -102,6 +118,7 @@
     color: var(--white);
     margin-top: 1.5rem;
     font-weight: 600;
+    cursor: pointer;
   }
   .description{
     color: var(--soft-blue);
@@ -157,6 +174,7 @@
   }
   span{
     color: var(--white);
+    cursor: pointer;
   }
 
   /* Hover effects*/
@@ -171,3 +189,9 @@
   .top_img:hover{
     opacity: 1;
   }
+  
+  .color_bg:hover{
+    opacity: 0.6;
+
+  }
+
