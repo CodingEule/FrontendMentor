@@ -77,4 +77,71 @@
 
 body{
     font-size: 15px;
+    background-color: var(--very-dark-blue-bg);
+    display: grid;
+    margin: 4rem;
+    place-content: center;
+    font-family: var(--ff-lexend-deca);
+}
+
+.container{
+  background-color: var(--dark-desaturated-blue-card-bg);
+  max-width: 400px;
+  border-radius: 10px;
+
+}
+
+
+
+/* Image Styling */
+
+.image_container{
+  position: relative;
+  width: auto;
+  height: 200px;
+}
+
+.img_mobile{
+  border-radius: 10px 10px 0 0;
+}
+.img_desktop{
+  display: none;
+}
+.overlay{
+  background-color: var(--soft-violet-acc);
+  width: 247px;
+  height: 181px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.55;
+  border-radius: 10px 10px 0 0;
+
+  
+}
+
+/* Card Content Styling */
+.card_content{
+  margin: 0 1rem 1rem 1rem;
+  text-align: center;
+  display:grid;
+}
+.stats_heading{
+  margin-top: .1rem;
+  text-transform: uppercase;
+}
+.stats_value{
+  margin-top: 1.3rem;
+}
+
+p{
+  margin-top: 1rem;
+  color: var(--slightly-transparent-white-main);
+}
+h2, h3{
+  font-family: var(--ff-inter);
+  color: white;
+}
+span{
+  color: var(--soft-violet-acc);
 }
