@@ -84,31 +84,16 @@
   .image_container{
     position: relative;
     width: auto;
-    height: 340px;
+    height: 335px;
     cursor: pointer;
-  }
-  .top_img{
-    position: absolute;
-    top: 43%;
-    left:43%;
-    opacity: 0;
-    cursor: pointer;
-  }
-  .color_bg{
-    background-color: var(--cyan);
-    width: 336px;
-    height: 336px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background: var(--dark-blue-bg-card);
     border-radius: 10px;
-    opacity: 0;
-
   }
   .card{
     margin: 2rem;
   }
   .nft{
+    width:100%;
     border-radius: 10px;
   }
 
@@ -184,14 +169,17 @@
   span:hover,
   span:active{
     color:var(--cyan)
-  }
- 
-  .top_img:hover{
-    opacity: 1;
-  }
-  
-  .color_bg:hover{
-    opacity: 0.6;
 
   }
+  
+  .image_container:hover{
+    background-color: var(--cyan);
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .nft:hover{
+    opacity: 0.5;
+  }
+  
 
