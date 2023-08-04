@@ -86,7 +86,8 @@ body{
 
 .container{
   background-color: var(--dark-desaturated-blue-card-bg);
-  width: 300px;
+  max-width: 1000px;
+  width: 100%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -98,19 +99,17 @@ body{
 
 /* Image Styling */
 
+picture{
+}
+
 .img_container{
   background-color: var(--soft-violet-acc);
   border-radius: 10px 10px 0 0;
 }
 
 .img_mobile{
-  background: var(--soft-violet-acc);
   border-radius: 10px 10px 0 0;
   opacity: 0.4;
-}
-
-.img_desktop{
-  display: none;
 }
 
 /* Card Content Styling */
@@ -143,24 +142,11 @@ span{
 
 @media (min-width: 600px){
   .container{
-    width: 100vh;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: fit-content(55%) fit-content(45%);
   }
-
-  .img_container{
-    width: 100%;
-  }
-  .img_mobile{
-    display: none;
-  }
-  .img_desktop{
-    display: block;
-    opacity: 0.4;
-    width: 100%;
-    height: auto;
-  }
-
   .card_content{
+    order: -1;
     text-align: left;
     margin: 3rem;
     margin-right: 4rem;

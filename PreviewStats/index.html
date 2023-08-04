@@ -14,8 +14,10 @@
   <div class="container">
       
     <div class="img_container">
-      <img class="img_desktop" src="images/image-header-desktop.jpg" alt="desktop">
-      <img class="img_mobile" src="images/image-header-mobile.jpg" alt="mobile">  
+      <picture>
+        <source srcset="images\image-header-desktop.jpg" media="(min-width: 600px)"/>
+        <img class="img_mobile" src="images/image-header-mobile.jpg" alt="mobile">
+      </picture> 
     </div>
     <div class="card_content">
       <h2>Get <span>insights</span> that help your business grow.</h2>
