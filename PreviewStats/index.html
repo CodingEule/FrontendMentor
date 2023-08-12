@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Frontend Mentor | Stats preview card component</title>
 
-</head>
-<body>
-  <div class="container">
-      
-    <div class="img_container">
-      <picture>
-        <source srcset="images\image-header-desktop.jpg" media="(min-width: 600px)"/>
-        <img class="img_mobile" src="images/image-header-mobile.jpg" alt="mobile">
-      </picture> 
-    </div>
-    <div class="card_content">
-      <h2>Get <span>insights</span> that help your business grow.</h2>
+  </head>
+  <body>
+    <div class="container"> 
+      <div class="img_container">
+          <img class="img_desktop" src="images/image-header-desktop.jpg" alt="desktop">
+          <img class="img_mobile" src="images/image-header-mobile.jpg" alt="mobile">
+      </div>
+      <div class="card_content">
+        <h2>Get <span>insights</span> that help your business grow.</h2>
 
-      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-      experience, and overall efficiency.</p>
-      <div class="stats_card">
-        <div class="companies">
-          <h3 class="stats_value">10k+</h3> 
-          <p class="stats_heading">companies</p>
-        </div>
-        <div class="templates">
-          <h3 class="stats_value">314</h3> 
-          <p class="stats_heading">templates</p>
-        </div>
-        <div class="queries">
-          <h3 class="stats_value">12M+</h3> 
-          <p class="stats_heading">queries</p>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+        <div class="stats_card">
+          <div class="companies">
+            <h3 class="stats_value">10k+</h3> 
+            <p class="stats_heading">companies</p>
+          </div>
+          <div class="templates">
+            <h3 class="stats_value">314</h3> 
+            <p class="stats_heading">templates</p>
+          </div>
+          <div class="queries">
+            <h3 class="stats_value">12M+</h3> 
+            <p class="stats_heading">queries</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

@@ -86,8 +86,7 @@ body{
 
 .container{
   background-color: var(--dark-desaturated-blue-card-bg);
-  max-width: 1000px;
-  width: 100%;
+  max-width: 600px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -99,7 +98,9 @@ body{
 
 /* Image Styling */
 
-picture{
+.img_desktop{
+  display:none;
+  opacity: 0.4;
 }
 
 .img_container{
@@ -140,10 +141,25 @@ span{
   color: var(--soft-violet-acc);
 }
 
-@media (min-width: 600px){
+@media (min-width: 950px){
+
   .container{
     display: grid;
     grid-template-columns: fit-content(55%) fit-content(45%);
+    max-width: 900px;
+  }
+
+  .img_desktop{
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+  .img_mobile{
+    display: none;
+  }
+  .img_container{
+    border-radius: 0 10px 10px 0;
   }
   .card_content{
     order: -1;
